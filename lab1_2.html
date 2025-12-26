@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab1_2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      /* Header */
+      header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        letter-spacing: 2px;
+      }
+
+      /* Navigation */
+      nav {
+        background: #1a1a1a;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+      }
+
+      nav li {
+        margin: 0;
+      }
+
+      nav a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 1rem 2rem;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      nav a:hover,
+      nav a:focus {
+        background: linear-gradient(45deg, #ff6b6b, #feca57);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+      }
+
+      /* Main Layout */
+      main {
+        display: flex;
+        min-height: 70vh;
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      section {
+        flex: 2;
+      }
+
+      aside {
+        flex: 1;
+        background: linear-gradient(145deg, #f0f2f5, #ffffff);
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        height: fit-content;
+        position: sticky;
+        top: 2rem;
+      }
+
+      /* Content Styling */
+      h2 {
+        color: #2c3e50;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid #667eea;
+        position: relative;
+      }
+
+      h2::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 60px;
+        height: 4px;
+        background: linear-gradient(45deg, #ff6b6b, #feca57);
+        border-radius: 2px;
+      }
+
+      article {
+        background: white;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        border-left: 5px solid #667eea;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      article:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      article p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #555;
+      }
+
+      pre {
+        background: #2d3748;
+        color: #a0aec0;
+        padding: 1.5rem;
+        border-radius: 10px;
+        font-family: "Fira Code", "Monaco", monospace;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        overflow-x: auto;
+        box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.2);
+        border-left: 5px solid #667eea;
+      }
+
+      aside h3 {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+      }
+
+      /* Footer */
+      footer {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 2rem;
+      }
+
+      footer p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        main {
+          flex-direction: column;
+          padding: 1rem;
+        }
+
+        header h1 {
+          font-size: 2rem;
+        }
+
+        nav ul {
+          flex-direction: column;
+        }
+
+        nav a {
+          padding: 1rem;
+          text-align: center;
+        }
+      }
+
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Learn HTML</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="blogs">
+        <h2>HTML Fundamentals</h2>
+        <article class="intro">
+          <p>
+            HTML, or HyperText Markup Language, is the standard markup language
+            used to create and structure content on the World Wide Web. It
+            provides the fundamental structure for web pages that web browsers
+            then interpret and display to users.
+          </p>
+        </article>
+
+        <h2>Key Concepts</h2>
+        <article class="key_concept">
+          <pre><code>Hypertext: Links connecting web pages and sites for non-linear navigation
+Markup: Tags annotate text, images, and content for browser display
+Language: Syntax browsers understand to process and layout content</code></pre>
+          <p>
+            HTML serves as a style guide for content organization and
+            presentation, distinct from programming languages as it handles
+            structure rather than dynamic logic.
+          </p>
+        </article>
+      </section>
+
+      <aside id="about">
+        <h3>Basic HTML Structure</h3>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Kiran Phuyal. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

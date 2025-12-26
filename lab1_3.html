@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab1_3</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        height: 120px;
+        width: 250px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        border: 3px solid green;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      ul,
+      ol {
+        display: inline-block;
+        text-align: left;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <!-- 3. Create an HTML table that contains ordered and unordered lists inside table cells. -->
+  <body>
+    <h1>HTML table</h1>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Unorder_list</th>
+        <th>Order_list</th>
+      </tr>
+      <tr>
+        <td>Science</td>
+        <td>
+          <ul type="square">
+            <li>physics</li>
+            <li>Chemistry</li>
+            <li>Biology</li>
+          </ul>
+        </td>
+        <td>
+          <ol type="A">
+            <li>Energy</li>
+            <li>Chemical</li>
+            <li>Animal</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td>Computer</td>
+        <td>
+          <ul>
+            <li>HTML</li>
+            <li>Java</li>
+            <li>Python</li>
+          </ul>
+        </td>
+        <td>
+          <ol>
+            <li>CSS</li>
+            <li>echo</li>
+            <li>Print</li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

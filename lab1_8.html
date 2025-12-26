@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab1_8</title>
+  </head>
+  <!-- 8. Write different input elements in HTML including text area and slelect. -->
+  <body>
+    <!-- Text Inputs (<input type="...">) -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" /><br /><br />
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" /><br /><br />
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" /><br /><br />
+    <label for="quantity">Quantity (1 to 5):</label>
+    <input
+      type="number"
+      id="quantity"
+      name="quantity"
+      min="1"
+      max="5"
+    /><br /><br />
+    <br /><br />
+    <!-- Checkboxes and Radio Buttons -->
+    <label for="meeting-time">Meeting Time:</label>
+    <input
+      type="datetime-local"
+      id="meeting-time"
+      name="meeting-time"
+    /><br /><br />
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+    <label for="subscribe">Subscribe to newsletter</label><br />
+    <input type="radio" id="visa" name="payment" value="visa" />
+    <label for="visa">Visa</label>
+    <input type="radio" id="mastercard" name="payment" value="mastercard" />
+    <label for="mastercard">Mastercard</label><br /><br />
+    <!-- File and Other Inputs -->
+    <label for="avatar">Choose a profile picture:</label>
+    <input
+      type="file"
+      id="avatar"
+      name="avatar"
+      accept="image/png, image/jpeg"
+    /><br /><br />
+    <input type="submit" value="Submit Form" /><br /><br />
+    <!-- Select Dropdown (<select>) -->
+
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option></select
+    ><br /><br />
+    <!-- Textarea (<textarea>) -->
+    <label for="comments">Comments:</label><br />
+    <textarea id="comments" name="comments" rows="4" cols="50">
+..
+</textarea
+    ><br /><br />
+  </body>
+</html>

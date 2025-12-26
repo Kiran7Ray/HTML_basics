@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab1_5</title>
+    <!-- Metadata for search engines -->
+    <meta
+      name="keywords"
+      content="HTML, viewport, meta tag, web design, mobile, tutorial"
+    />
+    <meta
+      name="description"
+      content="An HTML document to demonstrate the effect of the viewport meta tag on mobile devices."
+    />
+    <meta name="author" content="kiran" />
+    <!-- The crucial viewport meta tag for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        font-family: sans-serif;
+        background-color: #f4f4f4;
+      }
+      .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+      }
+      p {
+        color: #666;
+        line-height: 1.5;
+      }
+    </style>
+    <!-- 5. Create an HTML document that uses metadata like title, charset, keywords, description,
+author, viewport. Observe the effect of adding and removing the viewport meta tag in mobile
+view -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Understanding the Viewport Meta Tag</h1>
+      <p>
+        This page uses the viewport meta tag to ensure proper rendering and
+        touch zooming on mobile devices. The content should fit the width of
+        your device screen without horizontal scrolling.
+      </p>
+      <h2>Instructions:</h2>
+      <ol>
+        <li>
+          View this page on a mobile device or use your browser's DevTools
+          mobile simulator.
+        </li>
+        <li>
+          Observe how the content fits neatly within the screen boundaries.
+        </li>
+        <li>
+          <strong>Remove the viewport line</strong> from the HTML code, save the
+          file, and refresh the page on your mobile device.
+        </li>
+        <li>
+          Observe the difference: the page will likely appear tiny and require
+          horizontal scrolling/zooming to read the content.
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
